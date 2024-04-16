@@ -47,9 +47,7 @@ export function Navigation({ className, onLinkClick }) {
                       /> */}
                       <DynamicColorIcon svg={link.icon} />
                     </div>
-                    <p className='text-foreground text-s mt-2 ml-2'>
-                      {link.title}
-                    </p>
+                    <p className='text-foreground text-sm ml-2'>{link.title}</p>
                   </Link>
                 </li>
               ))}
