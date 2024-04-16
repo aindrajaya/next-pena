@@ -16,3 +16,13 @@
   border-color: grey;
   opacity: 0.3;
 }
+
+.title-font {
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+}
