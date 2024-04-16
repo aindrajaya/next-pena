@@ -23,7 +23,7 @@ const iconStyles = {
     '[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]',
 }
 
-export function Icon({ icon, color = 'blue', className, ...props }) {
+export function Icon({ icon, color = 'amber', className, ...props }) {
   let id = useId()
   let IconComponent = icons[icon]
 
