@@ -11,3 +11,8 @@
     display: none;
   }
 }
+
+.grey-color {
+  border-color: grey;
+  opacity: 0.3;
+}
