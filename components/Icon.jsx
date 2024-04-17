@@ -1,12 +1,12 @@
-import { useId } from 'react'
-import clsx from 'clsx'
+import { useId } from 'react';
+import clsx from 'clsx';
 
-import { InstallationIcon } from './icons/InstallationIcon'
-import { LightbulbIcon } from './icons/LightbulbIcon'
-import { PluginsIcon } from './icons/PluginsIcon'
-import { PresetsIcon } from './icons/PresetsIcon'
-import { ThemingIcon } from './icons/ThemingIcon'
-import { WarningIcon } from './icons/WarningIcon'
+import { InstallationIcon } from './icons/InstallationIcon';
+import { LightbulbIcon } from './icons/LightbulbIcon';
+import { PluginsIcon } from './icons/PluginsIcon';
+import { PresetsIcon } from './icons/PresetsIcon';
+import { ThemingIcon } from './icons/ThemingIcon';
+import { WarningIcon } from './icons/WarningIcon';
 
 const icons = {
   installation: InstallationIcon,
@@ -15,29 +15,29 @@ const icons = {
   theming: ThemingIcon,
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
-}
+};
 
 const iconStyles = {
   blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
   amber:
     '[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]',
-}
+};
 
 export function Icon({ icon, color = 'amber', className, ...props }) {
-  let id = useId()
-  let IconComponent = icons[icon]
+  let id = useId();
+  let IconComponent = icons[icon];
 
   return (
     <svg
-      aria-hidden="true"
-      viewBox="0 0 32 32"
-      fill="none"
+      aria-hidden='true'
+      viewBox='0 0 32 32'
+      fill='none'
       className={clsx(className, iconStyles[color])}
       {...props}
     >
       <IconComponent id={id} color={color} />
     </svg>
-  )
+  );
 }
 
 const gradients = {
@@ -50,7 +50,7 @@ const gradients = {
     { stopColor: '#FDE68A', offset: '.08' },
     { stopColor: '#F59E0B', offset: '.837' },
   ],
-}
+};
 
 export function Gradient({ color = 'blue', ...props }) {
   return (
@@ -58,20 +58,20 @@ export function Gradient({ color = 'blue', ...props }) {
       cx={0}
       cy={0}
       r={1}
-      gradientUnits="userSpaceOnUse"
+      gradientUnits='userSpaceOnUse'
       {...props}
     >
       {gradients[color].map((stop, stopIndex) => (
         <stop key={stopIndex} {...stop} />
       ))}
     </radialGradient>
-  )
+  );
 }
 
 export function LightMode({ className, ...props }) {
-  return <g className={clsx('dark:hidden', className)} {...props} />
+  return <g className={clsx('dark:hidden', className)} {...props} />;
 }
 
 export function DarkMode({ className, ...props }) {
-  return <g className={clsx('hidden dark:inline', className)} {...props} />
+  return <g className={clsx('hidden dark:inline', className)} {...props} />;
 }
