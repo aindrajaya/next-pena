@@ -23,6 +23,10 @@
   opacity: 0.3;
 }
 
+.orange {
+  background-color: rgb(240, 171, 43);
+}
+
 * {
   font-family: 'Helvetica', sans-serif;
 }
