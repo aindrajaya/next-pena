@@ -1,5 +1,5 @@
 ---
-title: Pena Docs
+title:
 ---
 
 {% quick-links %}
