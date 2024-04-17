@@ -1,5 +1,5 @@
-const typographyPlugin = require('@tailwindcss/typography')
-const colors = require('tailwindcss/colors')
+const typographyPlugin = require('@tailwindcss/typography');
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,8 +10,8 @@ module.exports = {
   ],
   darkMode: 'selector',
   theme: {
-    colors:{
-      'pena': {
+    colors: {
+      pena: {
         50: '#fef9ec',
         100: '#fcecc9',
         200: '#f9d78e',
@@ -22,7 +22,7 @@ module.exports = {
         700: '#ae410f',
         800: '#8d3213',
         900: '#742a13',
-        950: '#431405'
+        950: '#431405',
       },
       transparent: 'transparent',
       current: 'currentColor',
@@ -35,7 +35,7 @@ module.exports = {
       slate: colors.slate,
       sky: colors.sky,
       pink: colors.pink,
-      teal: colors.teal
+      teal: colors.teal,
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -63,5 +63,4 @@ module.exports = {
     },
   },
   plugins: [typographyPlugin],
-}
-
+};

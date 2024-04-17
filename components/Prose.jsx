@@ -1,7 +1,7 @@
-import clsx from 'clsx'
+import clsx from 'clsx';
 
 export function Prose({ as, className, ...props }) {
-  let Component = as ?? 'div'
+  let Component = as ?? 'div';
 
   return (
     <Component
@@ -19,9 +19,9 @@ export function Prose({ as, className, ...props }) {
         // pre
         'prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10',
         // hr
-        'dark:prose-hr:border-pena-800',
+        'dark:prose-hr:border-pena-800'
       )}
       {...props}
     />
-  )
+  );
 }

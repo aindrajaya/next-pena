@@ -15,7 +15,7 @@ export function Navigation({ className, onLinkClick }) {
       <ul role='list' className='space-y-9'>
         {navigation.map((section) => (
           <li key={section.title}>
-            <h2 className='font-display text-xs text-slate-900 dark:text-white'>
+            <h2 className='text-s text-slate-900 dark:text-white title-font'>
               {section.title}
             </h2>
             <ul
@@ -47,9 +47,7 @@ export function Navigation({ className, onLinkClick }) {
                       /> */}
                       <DynamicColorIcon svg={link.icon} />
                     </div>
-                    <p className='text-foreground text-sm mt-2 ml-2'>
-                      {link.title}
-                    </p>
+                    <p className='text-foreground text-sm ml-2'>{link.title}</p>
                   </Link>
                 </li>
               ))}

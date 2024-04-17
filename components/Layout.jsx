@@ -39,14 +39,14 @@ function Header() {
   return (
     <header
       className={clsx(
-        'sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-pena-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none',
+        'sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-4 shadow-md shadow-pena-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none',
         isScrolled
           ? 'dark:bg-gray-950/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-gray-950/75'
           : 'dark:bg-transparent'
       )}
     >
       <div className='mr-6 flex lg:hidden'>{/* <MobileNavigation /> */}</div>
-      <div className='relative flex flex-grow basis-0 items-center pl-5 pt-2'>
+      <div className='relative flex flex-grow basis-0 items-center pl-4 pt-2'>
         <Link href='/' aria-label='Home page'>
           {/* <Logomark className="h-9 w-9 lg:hidden" /> */}
           {/* <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-pena-500" /> */}
