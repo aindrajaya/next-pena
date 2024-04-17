@@ -53,9 +53,20 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
+      // fontFamily: {
+      //   sans: 'var(--font-inter)',
+      //   display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
+      // },
       fontFamily: {
-        sans: 'var(--font-inter)',
-        display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
+        sans: [
+          'Circular',
+          'custom-font',
+          'Helvetica Neue',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+        ],
+        mono: ['Office Code Pro', 'Source Code Pro', 'Menlo', 'monospace'],
       },
       maxWidth: {
         '8xl': '88rem',

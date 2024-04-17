@@ -22,9 +22,9 @@ export function DocsHeader({ title }) {
         </p>
       )}
       {title && (
-        <h1 className='text-3xl tracking-tight text-slate-900 dark:text-pena-200'>
+        <h2 className='text-2xl font-normal tracking-tight text-slate-900 dark:text-pena-200'>
           {title}
-        </h1>
+        </h2>
       )}
     </header>
   );

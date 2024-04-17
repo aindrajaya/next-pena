@@ -18,11 +18,11 @@
 }
 
 .title-font {
-  font-family: 'Source Code Pro', monospace;
+  font-family: Office Code Pro, Source Code Pro, Menlo, monospace;
   text-transform: uppercase;
   opacity: 0.3;
 }
 
-* {
+/* * {
   font-family: 'Helvetica', sans-serif;
-}
+} */
