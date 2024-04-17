@@ -3,10 +3,16 @@ import { useTheme } from 'next-themes'
 import { Listbox } from '@headlessui/react'
 import clsx from 'clsx'
 
-const themes = [
+const themes2 = [
   { name: 'Light', value: 'light', icon: LightIcon },
   { name: 'Dark', value: 'dark', icon: DarkIcon },
   { name: 'System', value: 'system', icon: SystemIcon },
+]
+
+const themes = [
+  { name: 'Light', value: 'light', icon: LightIcon, enabled: true },
+  { name: 'Dark', value: 'dark', icon: DarkIcon, enabled: false },
+  { name: 'System', value: 'system', icon: SystemIcon, enabled: false },
 ]
 
 function LightIcon(props) {
@@ -79,6 +85,7 @@ export function ThemeSelector(props) {
       </Listbox.Button>
       <Listbox.Options className="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-800 dark:ring-white/5">
         {themes.map((theme) => (
+          theme.enabled && (
           <Listbox.Option
             key={theme.value}
             value={theme.value}
@@ -110,6 +117,7 @@ export function ThemeSelector(props) {
               </>
             )}
           </Listbox.Option>
+          )
         ))}
       </Listbox.Options>
     </Listbox>

@@ -27,6 +27,8 @@
     "@headlessui/react": "^1.7.18",
     "@markdoc/markdoc": "^0.4.0",
     "@markdoc/next.js": "^0.3.7",
+    "@scalar/api-client-react": "^0.2.22",
+    "@scalar/api-reference-react": "^0.1.41",
     "@sindresorhus/slugify": "^2.2.1",
     "@tailwindcss/typography": "^0.5.12",
     "clsx": "^2.1.0",
@@ -39,6 +41,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-highlight-words": "^0.20.0",
+    "scalar": "^0.3.3",
     "simple-functional-loader": "^1.2.1",
     "url": "^0.11.3"
   },
