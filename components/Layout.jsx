@@ -43,7 +43,7 @@ function Header() {
   return (
     <header
       className={clsx(
-        `sticky top-0 ${isReferencePage ? "mt-0" : "mt-8"} z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-4 shadow-md shadow-pena-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none`,
+        `sticky top-0 ${isReferencePage ? "mt-0" : "mt-8"} z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-4 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none`,
         isScrolled
           ? "dark:bg-gray-950/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-gray-950/75"
           : "dark:bg-gray-950"
