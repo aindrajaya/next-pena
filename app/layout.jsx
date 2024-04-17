@@ -26,7 +26,7 @@ export const metadata = {
     default: 'Pena - Technical Writing as Subscription.',
   },
   description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+    'Subscribe to our documentation service and harness the power of pre-cached information.',
 }
  
 export default function RootLayout({ children }) {
