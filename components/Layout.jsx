@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import Image from "next/legacy/image";
 
-// import { Hero } from '@/components/Hero'
+import { Hero } from './Hero'
 import { Logo, Logomark } from "./Logo";
 // import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from "./Navigation";
@@ -68,6 +68,11 @@ export function Layout({ children }) {
       <Navigation />
       <div className="flex flex-col w-full overflow-y-scroll px-4 lg:pl-8 lg:pr-0 xl:px-16">
         <Header />
+        <div className="bg-red-100">
+          {isHomePage && <Hero />}  
+        </div>
+
+        
         <div className="relative flex w-full flex-auto justify-center">
           <div className="hidden lg:relative lg:block lg:flex-none">
             <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
@@ -80,7 +85,7 @@ export function Layout({ children }) {
         </div>
       </div>
 
-      {/* {isHomePage && <Hero />} */}
+      
     </div>
   );
 }

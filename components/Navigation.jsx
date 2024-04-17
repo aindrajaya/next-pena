@@ -59,7 +59,7 @@ export function Navigation({ className, onLinkClick }) {
                   </Link>
                 </li>
               ))}
-              <div class="h-px w-full border-b pb-1 grey-color"></div>
+              <div className="h-px w-full border-b pb-1 grey-color"></div>
             </ul>
           </li>
         ))}
