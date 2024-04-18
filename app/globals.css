@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "custom-font";
+  src: url(../fonts/CustomFont-Book.woff2) format("woff2"),
+    url(../fonts/CustomFont-Book.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

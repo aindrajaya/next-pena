@@ -38,7 +38,7 @@ function Header() {
   return (
     <header
       className={clsx(
-        "sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-4 shadow-md shadow-pena-900/5 transition duration-500 sm:px-6 lg:px-8 dark:shadow-none",
+        "sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-8 shadow-md shadow-pena-900/5 transition duration-500 dark:shadow-none h-[60px]",
         isScrolled
           ? "dark:bg-gray-950/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-gray-950/75"
           : "dark:bg-transparent"
@@ -64,15 +64,15 @@ export function Layout({ children }) {
   let isHomePage = pathname === "/";
 
   return (
-    <div className="flex w-full flex-row max-h-screen">
-      <Navigation />
-      <div className="flex flex-col w-full overflow-y-scroll px-4 lg:pl-8 lg:pr-0 xl:px-16">
+    <div className="flex w-full flex-row max-h-screen font-customFont">
+      <Navigation pathname = {pathname} />
+      <div className="flex flex-col w-full overflow-y-scroll max-w-screen">
         <Header />
         <div className="relative flex w-full flex-auto justify-center">
           <div className="hidden lg:relative lg:block lg:flex-none">
             <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
-            <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
-            <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block" />
+            {/* <div className="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" /> */}
+            {/* <div className="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block" /> */}
             {/* <div className="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"> */}
             {/* </div> */}
           </div>

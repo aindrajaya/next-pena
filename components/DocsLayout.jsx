@@ -9,9 +9,9 @@ export function DocsLayout({ children, frontmatter: { title }, nodes }) {
 
   return (
     <>
-      <div className="min-w-0 max-w-2xl flex-auto py-16 lg:max-w-none ">
+      <div className="min-w-0 max-w-2xl flex-auto py-16 px-8 lg:max-w-none ">
         <article>
-          <DocsHeader title={title} />
+          {/* <DocsHeader title={title} /> */}
           <Prose>{children}</Prose>
         </article>
         <PrevNextLinks />

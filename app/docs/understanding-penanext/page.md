@@ -10,9 +10,6 @@ nextjs:
 
 In this guide, you'll gain a comprehensive understanding of how Next.js is utilized within PenaTeam's documentation framework.
 
-## What is Next.js?
-
-Next.js is a React framework that provides several features essential for building modern web applications. It offers server-side rendering, automatic code splitting, and simplified routing, making it a powerful choice for building robust and performant web applications.
 
 ## Benefits of Next.js for Documentation
 

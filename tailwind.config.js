@@ -56,6 +56,7 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-inter)',
         display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
+        customFont: ['custom-font', 'sans-serif']
       },
       maxWidth: {
         '8xl': '88rem',

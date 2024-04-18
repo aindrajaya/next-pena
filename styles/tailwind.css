@@ -1,7 +1,7 @@
-@import 'tailwindcss/base';
-@import './prism.css';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "./prism.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
@@ -9,6 +9,16 @@
 @layer base {
   [inert] ::-webkit-scrollbar {
     display: none;
+  }
+  @font-face {
+    font-family: "custom-font";
+    src: url(../fonts/CustomFont-Book.woff2)
+        format("woff2"),
+      url(../fonts/CustomFont-Book.woff)
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
   }
 }
 
@@ -18,11 +28,11 @@
 }
 
 .title-font {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   text-transform: uppercase;
   opacity: 0.3;
 }
 
-* {
-  font-family: 'Helvetica', sans-serif;
-}
+/* * {
+  font-family: "Helvetica", sans-serif;
+} */
