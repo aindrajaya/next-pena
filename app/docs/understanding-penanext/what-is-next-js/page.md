@@ -7,5 +7,6 @@ nextjs:
 ---
 
 ## What is Next.js?
+---
 
 Next.js is a React framework that provides several features essential for building modern web applications. It offers server-side rendering, automatic code splitting, and simplified routing, making it a powerful choice for building robust and performant web applications.

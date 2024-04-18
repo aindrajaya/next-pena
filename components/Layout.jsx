@@ -9,6 +9,8 @@ import Image from "next/legacy/image";
 // import { Hero } from '@/components/Hero'
 import { Logo, Logomark } from "./Logo";
 // import { MobileNavigation } from '@/components/MobileNavigation'
+import LogoPena from "../public/img/pena-text.png";
+
 import { Navigation } from "./Navigation";
 import { Search } from "./Search";
 import { ThemeSelector } from "./ThemeSelector";
@@ -38,18 +40,22 @@ function Header() {
   return (
     <header
       className={clsx(
-        "sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-8 shadow-md shadow-pena-900/5 transition duration-500 dark:shadow-none h-[60px]",
+        "lg:sticky top-0 z-10 md:z-50 flex flex-none flex-wrap items-center justify-between bg-white px-5 shadow-md shadow-pena-900/5 transition duration-500 dark:shadow-none h-[60px]",
         isScrolled
           ? "dark:bg-gray-950/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-gray-950/75"
           : "dark:bg-transparent"
       )}
     >
-      <div className="mr-6 flex lg:hidden">{/* <MobileNavigation /> */}</div>
-      
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
+      <div className="h-full flex items-center justify-center block md:hidden">
+        <Link href="/" aria-label="Home page">
+          <Image src={LogoPena} alt="Pena Logo" width={50} height={27} />
+        </Link>
+      </div>
+
+      <div className="h-[32px]">
         <Search />
       </div>
-      <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
+      <div className="relative basis-0 justify-end gap-6 sm:gap-8 md:flex-grown hidden md:flex">
         <ThemeSelector className="relative z-10" />
         <Link href="https://github.com" className="group" aria-label="GitHub">
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
@@ -62,12 +68,19 @@ function Header() {
 export function Layout({ children }) {
   let pathname = usePathname();
   let isHomePage = pathname === "/";
+  
 
   return (
-    <div className="flex w-full flex-row max-h-screen font-customFont">
-      <Navigation pathname = {pathname} />
+    <div className="flex w-full flex-col md:flex-row max-h-screen font-customFont">
+      <span className="hidden md:flex">
+        <Navigation pathname={pathname} type={"sidebar"} />
+      </span>
+
       <div className="flex flex-col w-full overflow-y-scroll max-w-screen">
-        <Header />
+        <Header className="hidden md:flex" />
+        <span className="flex md:hidden">
+          <Navigation pathname={pathname} type={"topbar"} />
+        </span>
         <div className="relative flex w-full flex-auto justify-center">
           <div className="hidden lg:relative lg:block lg:flex-none">
             <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />

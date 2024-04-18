@@ -7,6 +7,7 @@ nextjs:
 ---
 
 ## Benefits of Next.js for Documentation
+----
 
 ### Server-Side Rendering (SSR)
 
