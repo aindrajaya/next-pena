@@ -4,17 +4,17 @@ title:
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/docs/installation" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Installation" icon="play" href="/docs/installation" description="Dive into our step-by-step guide to set up your documentation." /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/docs/architecture-guide" description="Learn how the internals work and contribute." /%}
+{% quick-link title="About Pena guide" icon="pen" href="/docs/about-pena" description="Learn about our journey, passion, and why we're here." /%}
 
-{% quick-link title="Understanding" icon="plugins" href="/docs/understanding-penanext" description="Extend the library with third-party plugins or write your own." /%}
+{% quick-link title="User Behavior" icon="user" href="/docs/understanding-user" description="Analyze user behaviour to tailor the docs based on your needs." /%}
 
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+{% quick-link title="API reference" icon="terminal" href="/reference" description="Your go-to reference to build the best developer hubs." /%}
 
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+{% quick-link title="Architeucture Guide" icon="arch" href="/docs/architecture-guide" description="The ultimate guide to delving into our system structure." /%}
 
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
+{% quick-link title="Contribute with Us" icon="bold" href="/docs/how-to-contribute" description=" Collaborate with us to explore your creativity and enrich your documentation journey" /%}
 
 {% /quick-links %}
 

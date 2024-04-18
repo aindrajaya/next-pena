@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
 import { Icon } from './Icon';
+import { Bolt, BadgeCheck, Terminal, Pointer, PenTool, Play, Users, Pyramid } from 'lucide-react';
+
+
+
 
 export function QuickLinks({ children }) {
   return (
@@ -17,7 +21,15 @@ export function QuickLink({ title, description, href, icon }) {
       <div className='relative overflow-hidden rounded-xl p-6'>
         <div className='flex items-center mb-6'>
           <div className='rounded p-2 bg-pena-400'>
-            <Icon icon={icon} className='h-6 w-6' />
+          {
+            icon === "cursor" ? <Play /> : 
+            icon === "pen" ? <PenTool /> : 
+            icon === "terminal" ? <Terminal /> : 
+            icon === "user" ? <Users /> : 
+            icon === "bold" ? <Bolt /> : 
+            icon === "arch" ? <Pyramid /> : 
+            icon === "start" ? <BadgeCheck /> : <Pointer />
+          }
           </div>
           <h2 className='ml-4 text-base text-pena-900 dark:text-pena-500'>
             <Link href={href}>

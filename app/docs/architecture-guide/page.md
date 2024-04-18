@@ -2,7 +2,7 @@
 title: Architecture guide
 nextjs:
   metadata:
-    title: Architecture guide
+    title: Architecture guide Pena
     description: A comprehensive guide to understanding the architecture of PenaTeam's Next.js documentation.
 ---
 

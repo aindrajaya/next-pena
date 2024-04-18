@@ -1,8 +1,8 @@
 ---
-title: Neuralink integration
+title: Understanding user behavior
 nextjs:
   metadata:
-    title: Neuralink integration
+    title: Predicting and Understanding user behavior
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
@@ -10,8 +10,7 @@ Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo ex
 
 ---
 
-## Quis vel iste dicta
-
+## User Behavior
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
 
 ### Et pariatur ab quas
@@ -19,14 +18,18 @@ Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut par
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
 
 ```js
-/** @type {import('@tailwindlabs/lorem').ipsum} */
-export default {
-  lorem: 'ipsum',
-  dolor: ['sit', 'amet', 'consectetur'],
-  adipiscing: {
-    elit: true,
-  },
-}
+// pena.config.js
+const config = {
+  title: 'Pena - Technical Writing as Subscription.',
+  description: 'Your metadata descriptoin',
+  author: 'Penateam',
+  siteUrl: 'https://your-nextjs-site.example.com',
+  logo: '/images/logo.svg',
+  defaultLocale: 'en',
+  locales: ['en', 'fr'],\
+};
+  
+module.exports = config;
 ```
 
 Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.

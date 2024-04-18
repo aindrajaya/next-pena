@@ -6,16 +6,16 @@ import { Button } from './Button'
 import { HeroBackground } from './HeroBackground'
 
 const codeLanguage = 'javascript'
-const code = `export default {
-  name: 'Documentatino',
-  metadata: {
-    desc: "Docs for life",
-    tags: ['docs', 'write'],
-  },
-}`
+const code = `const config = {
+  title: 'Pena - Title.',
+  description: 'Pena description,
+  ...
+}
+
+module.exports = config;`
 
 const tabs = [
-  { name: 'config.js', isActive: true },
+  { name: 'pena.config.js', isActive: true },
   { name: 'package.json', isActive: false },
 ]
 
@@ -38,17 +38,14 @@ export function Hero() {
 
             <div className="relative">
               <p className="inline bg-gradient-to-r from-yellow-200 via-pena-400 to-pena-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Documentation as Subscription.
+                Next-Gen Documentation.
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                Subscribe to our documentation service 
-                and harness the power of pre-cached information
+                Bringing your ideas to life with an easy-to-use doc generator, 
+                fully customizable, and optimized for user engagement.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>
-                <Button href="/" variant="secondary">
-                  View on GitHub
-                </Button>
               </div>
             </div>
           </div>

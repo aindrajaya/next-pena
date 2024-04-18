@@ -7,14 +7,20 @@ import { PluginsIcon } from './icons/PluginsIcon'
 import { PresetsIcon } from './icons/PresetsIcon'
 import { ThemingIcon } from './icons/ThemingIcon'
 import { WarningIcon } from './icons/WarningIcon'
+import { CursorIcon } from './icons/CursorIcon'
+import { SparklesIcon } from './icons/SparklesIcon'
+import { Currency } from 'lucide-react'
 
 const icons = {
+  currency: <Currency />,
+  cursor: CursorIcon,
   installation: InstallationIcon,
   presets: PresetsIcon,
   plugins: PluginsIcon,
   theming: ThemingIcon,
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
+  sparkle: SparklesIcon
 }
 
 const iconStyles = {
