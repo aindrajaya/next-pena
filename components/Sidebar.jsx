@@ -87,7 +87,7 @@ const Sidebar = ({
                   stroke="#ED8213"
                   fill="none"
                   stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinejoin="round"
                 >
                   {" "}
                   <path stroke="none" d="M0 0h24v24H0z" />{" "}
@@ -99,7 +99,12 @@ const Sidebar = ({
 
               <h2 className="text-xl">{currentLink.title}</h2>
             </div>
-            <p className="text-sm md:text-md text-pena-500">Overview</p>
+            <Link
+              href={currentLink.href}
+              className="text-sm md:text-md text-pena-500"
+            >
+              Overview
+            </Link>
           </div>
           <div className="flex flex-col gap-2.5 mt-8">
             {currentLink.navigations.map((link) => {

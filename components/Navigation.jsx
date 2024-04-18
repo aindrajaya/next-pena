@@ -40,15 +40,11 @@ export function Navigation({ className, pathname, type }) {
   }
   useEffect(() => {
     const currentPage =
-      path === "/" ||
-      path === "/docs/installation" ||
-      pathname === "/" ||
-      pathname === "/docs/installation";
-    setIsHomepage(currentPage);
+      path === "/" || pathname === "/" || setIsHomepage(currentPage);
     if (currentPage) {
       setContents(navigation);
     } else {
-      const temp = findLinkByHref(path, navigation);
+      let temp = findLinkByHref(path, navigation);
       setCurrentLink(temp);
     }
   }, [currentSection, pathname]);
