@@ -7,23 +7,19 @@ import LogoPena from "../public/img/pena-text.png";
 import { navigation } from "../lib/navigation";
 import DynamicColorIcon from "./IconTail";
 
-export function Navigation({ className, onLinkClick }) {
-  let pathname = usePathname();
-  let isReferencePage = pathname === "/reference";
-
-  return (
-    <div className="bg-background border-muted sidebar-width sticky top-16-screen py-8 pl-8 w-1/4 hidden lg:block overflow-y-scroll">
-      <nav className={clsx('text-base lg:text-sm', className)}>
-      {
-        isReferencePage || 
-        <div className="relative flex flex-grow basis-0 items-center pl-4 pt-2 mb-12">
-          <Link href="/" aria-label="Home page">
-            {/* <Logomark className="h-9 w-9 lg:hidden" /> */}
-            {/* <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-pena-500" /> */}
-            <Image src={LogoPena} alt="Pena Logo" width={75} height={40} />
-          </Link>
-        </div>
-      }
+export const Nav = ({ className, onLinkClick, isReferencePage, pathname }) => {
+  return(
+    <nav className={clsx('text-base lg:text-sm', className)}>
+    {
+      isReferencePage || 
+      <div className="relative flex flex-grow basis-0 items-center pl-4 pt-2 mb-12">
+        <Link href="/" aria-label="Home page">
+          {/* <Logomark className="h-9 w-9 lg:hidden" /> */}
+          {/* <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-pena-500" /> */}
+          <Image src={LogoPena} alt="Pena Logo" width={75} height={40} />
+        </Link>
+      </div>
+    }
       <ul role="list" className="space-y-9">
         {navigation.map((section) => (
           <li key={section.title}>
@@ -68,7 +64,17 @@ export function Navigation({ className, onLinkClick }) {
           </li>
         ))}
       </ul>
-      </nav>
+    </nav>
+  )
+}
+
+export function Navigation({ className, onLinkClick }) {
+  let pathname = usePathname();
+  let isReferencePage = pathname === "/reference";
+
+  return (
+    <div className="bg-background border-muted sidebar-width sticky top-16-screen py-8 pl-8 w-1/4 hidden lg:block overflow-y-scroll">
+      <Nav className={className} onLinkClick={onLinkClick} isReferencePage={isReferencePage} pathname={pathname}/>
     </div>
   );
 }

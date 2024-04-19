@@ -6,7 +6,7 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import { Dialog } from '@headlessui/react'
 
 // import { Logomark } from './Logo'
-import { Navigation } from './Navigation'
+import { Nav } from './Navigation'
 
 function MenuIcon(props) {
   return (
@@ -95,7 +95,7 @@ export function MobileNavigation() {
               <Logomark className="h-9 w-9" />
             </Link> */}
           </div>
-          <Navigation className="mt-5 px-1" onLinkClick={onLinkClick} />
+          <Nav className="mt-5 px-1" onLinkClick={onLinkClick} />
         </Dialog.Panel>
       </Dialog>
     </>
