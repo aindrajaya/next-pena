@@ -8,8 +8,11 @@ import { HeroBackground } from './HeroBackground'
 const codeLanguage = 'javascript'
 const code = 
 `const config = {
-    title: 'Pena - Title.',
+
+  title: 'Pena - Title.',
+
 }
+
 
 module.exports = config;`
 
