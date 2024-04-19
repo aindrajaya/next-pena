@@ -2,11 +2,12 @@
 
 import React from 'react'
 import APIReference from "../../components/APIReference"
+import { apiReferenceConfig } from '../../pena.config'
 
 const Page = () => {
   return (
     <div className='w-full overflow-y-hidden'>
-      <APIReference />
+      <APIReference config={apiReferenceConfig}/>
     </div>
   )
 }

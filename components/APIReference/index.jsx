@@ -4,7 +4,7 @@ import { ApiReferenceReact } from '@scalar/api-reference-react'
 import {useThemeLayoutEffect} from '../../lib/hooks/useThemeLayoutEffect'
 import { useTheme } from 'next-themes'
 
-export const APIReference = () => {
+export const APIReference = ({config}) => {
   const { theme, resolvedTheme } = useTheme()
 
   useThemeLayoutEffect(() => {
@@ -25,13 +25,7 @@ export const APIReference = () => {
   return (
     <>
       <ApiReferenceReact
-        configuration={{
-          spec: {
-            url: 'https://petstore3.swagger.io/api/v3/openapi.json',
-          },
-          theme: 'alternate',
-          customCss: '.darklight{display:none!important;}',
-        }}
+        configuration={config}
       />
     </>
   )

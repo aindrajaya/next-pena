@@ -8,6 +8,15 @@ const config = {
     logo: '/images/logo.svg', // Path to your site logo
     defaultLocale: 'en',
     locales: ['en', 'fr'], // Example locales for internationalization
+
+    apiReferenceConfig: {
+      spec: {
+        // url: 'https://petstore3.swagger.io/api/v3/openapi.json',
+        url: "/upsto.json"
+      },
+      theme: 'alternate',
+      customCss: '.darklight{display:none!important;}',
+    }
   
     // Other configuration options as needed
   };

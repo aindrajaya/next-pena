@@ -111,8 +111,6 @@ export function Layout({ children }) {
           </div>
         } 
       </div>
-
-      
     </div>
   );
 }
