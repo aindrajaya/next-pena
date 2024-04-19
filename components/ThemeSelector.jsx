@@ -11,7 +11,7 @@ const themes2 = [
 
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon, enabled: true },
-  { name: 'Dark', value: 'dark', icon: DarkIcon, enabled: false },
+  { name: 'Dark', value: 'dark', icon: DarkIcon, enabled: true },
   { name: 'System', value: 'system', icon: SystemIcon, enabled: false },
 ]
 
