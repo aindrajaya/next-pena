@@ -8,11 +8,11 @@ import { HeroBackground } from './HeroBackground'
 const codeLanguage = 'javascript'
 const code = 
 `const config = {
-
   title: 'Pena - Title.',
-
+  description: "Platform description",
+  locales: ['en', 'fr'],
+  ...
 }
-
 
 module.exports = config;`
 
@@ -47,7 +47,7 @@ export function Hero() {
                 fully customizable, and optimized for user engagement.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
+                <Button href="/docs/getting-started">Get started</Button>
               </div>
             </div>
           </div>
