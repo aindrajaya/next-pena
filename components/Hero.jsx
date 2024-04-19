@@ -9,8 +9,6 @@ const codeLanguage = 'javascript'
 const code = 
 `const config = {
     title: 'Pena - Title.',
-    description: 'Pena description,
-    ...
 }
 
 module.exports = config;`
