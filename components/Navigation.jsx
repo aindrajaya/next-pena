@@ -53,7 +53,7 @@ export const Nav = ({ className, onLinkClick, isReferencePage, pathname }) => {
                         // src={link.icon}
                         src={"/img/icons-pena/arch.svg"}
                       /> */}
-                      <DynamicColorIcon svg={link.icon} />
+                      {/* <DynamicColorIcon svg={link.icon} /> */}
                     </div>
                     <p className="text-foreground text-sm ml-2">{link.title}</p>
                   </Link>
